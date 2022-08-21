@@ -1,0 +1,297 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+  background: #bed094;
+  background: linear-gradient(90deg, #bed094, #be8a60, #2e2836);
+  width: 100%;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.caja {
+  width: 100%;
+}
+
+a {
+  color: #cccccc;
+}
+
+header {
+  text-align: center;
+  width: auto;
+  padding: 5px;
+  height: 50px;
+  background: #6a2e35;
+}
+nav {
+  width: auto;
+  text-align: center;
+  padding: 10px;
+  height: 25px;
+}
+.navegacion {
+  font-family: "Verdana", sans-serif;
+  font-size: x-large;
+  color: #cccccc;
+}
+
+main {
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+.titulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.division-izquierda {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  height: 550px;
+  width: 50%;
+}
+
+#advertencia {
+  color: #000000;
+  font-size: 25px;
+}
+
+#texto {
+  width: 100%;
+  resize: none;
+  outline: none;
+  color: #000000;
+  background-color: #ffffff00;
+  border: 0;
+  font-size: 32px;
+  font-family: "Verdana", sans-serif;
+}
+
+::placeholder {
+  color: #000000;
+  font-family: "Verdana", sans-serif;
+}
+
+.alerta {
+  width: auto;
+  height: 4em;
+  margin: 1em 0 0 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+span {
+  width: auto;
+}
+
+button {
+  width: 160px;
+  height: 67px;
+  margin: 1em 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cccccc;
+  border: 1px solid #6a2e35;
+  background: #6a2e35;
+  border-radius: 24px;
+  transition: 500ms;
+}
+
+#principal:hover {
+  color: #6a2e35;
+  background: #cccccc;
+  border-radius: 24px;
+}
+
+#secundario:hover {
+  color: #6a2e35;
+  background: #cccccc;
+  border-radius: 24px;
+}
+
+.copiarTextoBtn:hover {
+  color: #6a2e35;
+  background: #cccccc;
+  border-radius: 24px;
+}
+
+.division-derecha {
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+  height: 550px;
+}
+
+.centro {
+  margin-top: 7em;
+}
+
+.cuadro {
+  width: 60%;
+  max-width: 352px;
+  min-width: 343px;
+  min-height: 440px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 32px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mensaje {
+  display: block;
+}
+
+.cuadroOculto {
+  display: none;
+}
+
+.mensajeNoEncontrado p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.mensajeIngreseTexto p {
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+.textoEncriptado {
+  resize: none;
+  outline: none;
+  color: #000000;
+  background-color: #ffffff00;
+  border: 0;
+  font-size: 24px;
+  font-family: "Verdana", sans-serif;
+  margin-top: 25px;
+}
+
+#copiarTexto {
+  margin-top: 2.5em;
+}
+
+#copiarTexto:hover {
+  color: #6a2e35;
+  background: #cccccc;
+  border-radius: 24px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  background: #6a2e35;
+  position: absolute;
+  bottom: 0;
+}
+.footer-div {
+  width: 100%;
+}
+.copyright {
+  display: inline-block;
+  height: 75px;
+  width: 100%;
+}
+
+.copyright p {
+  font-size: 12px;
+  margin: 1em auto;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .division-izquierda {
+    width: 100%;
+  }
+
+  #texto {
+    width: 80%;
+  }
+
+  .alerta {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  #principal {
+    margin-right: 0.5em;
+    width: 332px;
+  }
+
+  #secundario {
+    margin-left: 0.5em;
+    width: 332px;
+  }
+
+  .division-derecha {
+    width: 100%;
+    height: 550px;
+    max-width: none;
+    max-height: none;
+    padding-bottom: 7em;
+  }
+
+  .cuadro {
+    width: 688px;
+    height: 133px;
+    max-width: none;
+    max-height: none;
+    margin-top: 2em;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .division-izquierda {
+    width: 100%;
+    height: 500px;
+    max-width: none;
+    max-height: none;
+  }
+
+  #texto {
+    width: 80%;
+  }
+
+  .alerta {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .boton {
+    width: 100%;
+    align-items: center;
+  }
+
+  #principal {
+    width: 343px;
+    margin: 0;
+  }
+
+  #secundario {
+    width: 343px;
+    margin: 1.5em auto;
+  }
+
+  .division-derecha {
+    width: 100%;
+    height: 500px;
+    max-width: none;
+    max-height: none;
+    padding-bottom: 7em;
+  }
+  .cuadro {
+    width: 327px;
+    height: 186px;
+    max-width: none;
+    max-height: none;
+    margin-top: 2em;
+  }
+}

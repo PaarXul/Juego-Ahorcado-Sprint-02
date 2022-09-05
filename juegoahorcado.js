@@ -178,7 +178,9 @@ function resultado() {
   }
 }
 function nuevaPalabra() {
-  agregarpalabra = document.querySelector(".nuevapalabrajuego").value;
+  agregarpalabra = document
+    .querySelector(".nuevapalabrajuego")
+    .value.toUpperCase();
 
   palabras.push(agregarpalabra);
 

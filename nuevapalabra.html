@@ -31,13 +31,13 @@
             <input type="text" id="nuevapalabrajuego" class="nuevapalabrajuego" placeholder="Nueva Palabra">
           </div>
           <div class="contenedormedio">
-            <button onclick="nuevaPalabra()">Agregar Palabra</button>
+            <button onclick="nuevaPalabra()" id="principal">Agregar Palabra</button>
 
-            <button onclick="location.href='/juegoahorcado.html'">Jugar</button>
+            <button onclick="location.href='/juegoahorcado.html'" id="secundario">Jugar</button>
           </div>
           <div class="contenedorbajo">
-            <div><label for="">Palabras del Juego</label></div>
-            <div id="palabrasingresadas"></div>
+            <div class="labelin"><label for="">Palabras del Juego</label></div>
+            <div class="labelin" id="palabrasingresadas"></div>
           </div>
         </div>
 
@@ -57,6 +57,9 @@
     </div>
   </footer>
   <script src="juegoahorcado.js">
+  </script>
+  <script>
+    mostrarpalabrasingresadas();
   </script>
 </body>
 

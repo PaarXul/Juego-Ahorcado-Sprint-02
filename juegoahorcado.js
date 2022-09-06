@@ -47,6 +47,7 @@ function comprobar() {
     //compara el resultado, si el resultado es igual se resta la vida. y añade la letra ingresada.
     contadorVida--;
     letras_erradas = letras_erradas + letra + " ";
+
     document.getElementById("letrasErroneas").innerHTML = letras_erradas;
     document.getElementById("vida").innerHTML =
       "Vidas Actuales: " + contadorVida;
@@ -168,13 +169,13 @@ function resultado() {
   //COMPRUEBA EL RESULTADO ACTUAL
   if (contadorVida < 1) {
     //si el contador de vida es menor a uno pierde
-    document.removeEventListener("keydown", KeyboardEvent);
-    return;
+    letra = "";
+    document.removeEventListener("keydown", Window, false);
   }
   if (palabraAdi.search("_") == -1) {
     //busca en la palabra adivinada el guion bajo si este es menor a menos 1 se refleja el resultado ganador.
-    document.removeEventListener("keydown", KeyboardEvent);
-    return;
+    letra = "";
+    document.removeEventListener("keydown", Window, false);
   }
 }
 function nuevaPalabra() {

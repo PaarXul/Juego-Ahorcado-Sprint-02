@@ -7,6 +7,14 @@ let agregarpalabra = "";
 let palabrasretenidas = "";
 
 function iniciar() {
+  //RESET DE VARIABLES DEL JUEGO.
+  contadorVida = 6;
+  letras_erradas = "";
+  agregarpalabra = "";
+  palabrasretenidas = "";
+  palabraOculta = "";
+  palabraAdi = "";
+  limpiarDibujo();
   //Inicia el random de palabras. y muestra el tamaño de la palabra a adivinar.
   palabraOculta = palabras[Math.floor(Math.random() * palabras.length)];
   for (let i = 0; i < palabraOculta.length; i++) {
@@ -70,6 +78,14 @@ function comprobar() {
   }
   dibujar();
   letra = "";
+}
+
+function limpiarDibujo() {
+  var canvas = document.getElementById("lienzo");
+  if (canvas.getContext) {
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
 }
 
 function dibujar() {

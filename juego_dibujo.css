@@ -1,5 +1,5 @@
 div#frase {
-  border: 1px solid white;
+  border: 2px solid #cccccc;
   padding: 0.5rem;
   text-align: center;
   font-size: 25px;
@@ -51,4 +51,7 @@ div #lienzo {
 .letrasErroneas {
   margin-top: 1em;
   font-size: larger;
+}
+.erroneas {
+  padding-top: 1em;
 }

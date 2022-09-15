@@ -14,7 +14,6 @@ function iniciar() {
   }
   document.getElementById("frase").innerHTML = palabraAdi;
 }
-iniciar();
 
 let letra = "";
 let code = "";
@@ -200,4 +199,25 @@ function mostrarpalabrasingresadas() {
   }
 
   document.getElementById("palabrasingresadas").innerHTML = palabrasretenidas;
+}
+
+function mostrarmenuagregar() {
+  document.getElementById("caja").style.display = "none";
+  document.getElementById("caja-2").style.display = "none";
+  document.getElementById("caja-3").style.display = "initial";
+  mostrarpalabrasingresadas();
+}
+
+function mostrarmenujuego() {
+  document.getElementById("caja").style.display = "none";
+  document.getElementById("caja-2").style.display = "initial";
+  document.getElementById("caja-3").style.display = "none";
+  palabraAdi = "";
+  iniciar();
+}
+
+function mostrarmenuinicio() {
+  document.getElementById("caja").style.display = "initial";
+  document.getElementById("caja-2").style.display = "none";
+  document.getElementById("caja-3").style.display = "none";
 }

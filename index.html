@@ -21,21 +21,81 @@
   </header>
 
   <main>
-    <div class="caja">
+    <div class="caja" id="caja">
       <div class="division-izquierda">
         <div class="titulo">
           <h1>Bienvenido al juego del ahorcado</h1>
         </div>
         <div class="centro">
-          <button onclick="location.href='/juegoahorcado.html'" id="principal">Iniciar Juego</button>
-          <button onclick="location.href='/nuevapalabra.html'" id="secundario">Agregar Palabra</button>
+          <button onclick="mostrarmenujuego()" id="principal">Iniciar Juego</button>
+          <button onclick="mostrarmenuagregar()" id="secundario">Agregar Palabra</button>
         </div>
       </div>
       <!--botón -->
     </div>
-    <!--mod-encriptador -->
-    </div>
     <!--Caja -->
+    <div class="caja-2" id="caja-2">
+      <div class="division-izquierda">
+        <div class="titulo">
+          <h1>Bienvenido que comience el juego</h1>
+        </div>
+        <div class="centro">
+          <div class="contenedor">
+            <canvas id="lienzo">
+            </canvas>
+          </div>
+          <div class="contenedormedio">
+            <div>
+              <div id="frase">
+              </div>
+              <br>
+              <div id="erroneas">
+                <label for="">Letras Erroneas</label>
+              </div>
+              <div id="letrasErroneas"></div>
+              <div id="vida" class="vida">
+                <p>Vidas Actuales: 6</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="contenedorbajo">
+            <div class="boton">
+              <button onclick="mostrarmenujuego()" id="principal">Nuevo Juego</button>
+              <button onclick="mostrarmenuinicio()" id="secundario">Desistir</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Caja-2-->
+    <div class="caja-3" id="caja-3">
+      <div class="division-izquierda">
+        <div class="titulo">
+          <h1>Ingrese nueva Palabra para el juego</h1>
+        </div>
+        <div class="centro">
+          <div class="contenedor">
+            <input type="text" id="nuevapalabrajuego" class="nuevapalabrajuego" placeholder="Nueva Palabra">
+          </div>
+          <br>
+          <br>
+          <div class="contenedormedio">
+            <button onclick="nuevaPalabra()" id="principal">Agregar Palabra</button>
+
+            <button onclick="mostrarmenujuego()" id="secundario">Jugar</button>
+          </div>
+          <br>
+          <br>
+          <div class="contenedorbajo">
+            <div class="labelin"><label for="">Palabras del Juego</label></div>
+            <div class="labelin" id="palabrasingresadas"></div>
+          </div>
+        </div>
+
+      </div>
+      <!--Caja3-->
   </main>
   <footer>
     <div class="copyright">
@@ -50,6 +110,7 @@
       </div>
     </div>
   </footer>
+  <script src="juegoahorcado.js"></script>
 </body>
 
 </html>

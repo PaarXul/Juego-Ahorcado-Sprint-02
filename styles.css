@@ -12,6 +12,64 @@ body {
   margin-bottom: 40px;
 }
 
+a {
+  color: #cccccc;
+}
+
+header {
+  text-align: center;
+  width: auto;
+  padding: 5px;
+  height: 60px;
+  background: #6a2e35;
+}
+nav {
+  width: auto;
+  text-align: center;
+  padding: 10px;
+  height: 25px;
+}
+
+main {
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+span {
+  width: auto;
+}
+
+button {
+  width: 45%;
+  height: 65px;
+  margin: 1em 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cccccc;
+  border: 1px solid #6a2e35;
+  background: #6a2e35;
+  border-radius: 24px;
+  transition: 500ms;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  background: #6a2e35;
+  position: absolute;
+  bottom: 0;
+}
+div#frase {
+  border: 2px solid #cccccc;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 25px;
+}
+
+div #lienzo {
+  width: 80%;
+  height: 80%;
+}
+
 .caja {
   width: 100%;
   height: 80%;
@@ -22,37 +80,17 @@ body {
   height: 80%;
   display: none;
 }
-a {
-  color: #cccccc;
-}
 
-header {
-  text-align: center;
-  width: auto;
-  padding: 5px;
-  height: 50px;
-  background: #6a2e35;
-}
-nav {
-  width: auto;
-  text-align: center;
-  padding: 10px;
-  height: 25px;
-}
 .navegacion {
   font-family: "Verdana", sans-serif;
   font-size: x-large;
   color: #cccccc;
 }
 
-main {
-  padding-top: 10px;
-  text-align: center;
-  width: 100%;
-}
 .titulo {
   font-size: 18px;
   font-weight: bold;
+  padding-bottom: 5%;
 }
 
 .division-izquierda {
@@ -91,22 +129,6 @@ main {
   font-size: 12px;
   font-weight: bold;
 }
-span {
-  width: auto;
-}
-
-button {
-  width: 45%;
-  height: 67px;
-  margin: 1em 0 0 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #cccccc;
-  border: 1px solid #6a2e35;
-  background: #6a2e35;
-  border-radius: 24px;
-  transition: 500ms;
-}
 
 #principal:hover {
   color: #6a2e35;
@@ -134,7 +156,7 @@ button {
 }
 
 .centro {
-  margin-top: 2.5em;
+  margin-top: 2em;
   width: 100%;
   height: 100%;
 }
@@ -193,13 +215,6 @@ button {
   border-radius: 24px;
 }
 
-footer {
-  text-align: center;
-  width: 100%;
-  background: #6a2e35;
-  position: absolute;
-  bottom: 0;
-}
 .footer-div {
   width: 100%;
 }
@@ -214,6 +229,51 @@ footer {
   margin: 1em auto;
   font-weight: bold;
   color: #cccccc;
+}
+
+#letra {
+  margin-top: 1.5em;
+}
+
+#boton {
+  margin-top: 1.5em;
+}
+
+.vida {
+  margin-top: 1em;
+  color: greenyellow;
+  font-size: small;
+}
+.perdiste {
+  margin-top: 1em;
+  color: red;
+  font-size: medium;
+}
+
+.erroneas {
+  padding-top: 1em;
+}
+
+.letrasErroneas {
+  margin-top: 1em;
+  font-size: larger;
+}
+.contenedor {
+  width: 70%;
+  height: 70%;
+  display: inline-block;
+}
+.contenedormedio {
+  padding-top: 0.5em;
+  width: 100%;
+  height: 10%;
+  display: inline-block;
+}
+.contenedorbajo {
+  padding-top: 0.5em;
+  width: 100%;
+  height: 30%;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 899px) {
@@ -274,18 +334,18 @@ footer {
   }
 
   .boton {
-    width: 60%;
+    width: 40%;
     display: inline;
   }
 
   #principal {
-    width: 250px;
+    width: 150px;
     margin: 0;
   }
 
   #secundario {
-    width: 250px;
-    margin: 1.5em auto;
+    width: 150px;
+    margin: 1em auto;
   }
 
   .division-derecha {

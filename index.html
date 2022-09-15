@@ -9,9 +9,6 @@
   <title>Challenge Juego-Ahorcado Alura</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="juego_dibujo.css">
-  <!--<link rel="stylesheet" href="palabra.css"> -->
-
 </head>
 
 <body>
@@ -25,22 +22,25 @@
 
   <main>
     <div class="caja" id="caja">
-      <div class="division-izquierda">
+      <div class="centralizacion">
         <div class="titulo">
           <h1>Bienvenido al juego del ahorcado</h1>
         </div>
         <div class="centro">
-          <button onclick="mostrarmenujuego()" id="principal">Iniciar Juego</button>
-          <button onclick="mostrarmenuagregar()" id="secundario">Agregar Palabra</button>
+          <div class="contenedor">
+            <button onclick="mostrarmenujuego()" id="principal">Iniciar Juego</button>
+            <button onclick="mostrarmenuagregar()" id="secundario">Agregar Palabra</button>
+          </div>
         </div>
       </div>
       <!--botón -->
     </div>
+
     <!--Caja -->
     <div class="caja-2" id="caja-2">
-      <div class="division-izquierda">
+      <div class="centralizacion">
         <div class="titulo">
-          <h1>Bienvenido que comience el juego</h1>
+          <h1>Bienvenido al juego del ahorcado</h1>
         </div>
         <div class="centro">
           <div class="contenedor">
@@ -74,7 +74,7 @@
     </div>
     <!--Caja-2-->
     <div class="caja-3" id="caja-3">
-      <div class="division-izquierda">
+      <div class="centralizacion">
         <div class="titulo">
           <h1>Ingrese nueva Palabra para el juego</h1>
         </div>
@@ -85,9 +85,11 @@
           <br>
           <br>
           <div class="contenedormedio">
-            <button onclick="nuevaPalabra()" id="principal">Agregar Palabra</button>
+            <div class="boton">
+              <button onclick="nuevaPalabra()" id="principal">Agregar Palabra</button>
 
-            <button onclick="mostrarmenujuego()" id="secundario">Jugar</button>
+              <button onclick="mostrarmenujuego()" id="secundario">Jugar</button>
+            </div>
           </div>
           <br>
           <br>

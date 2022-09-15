@@ -11,11 +11,7 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
-
-a {
-  color: #cccccc;
-}
-
+/* Cabecera */
 header {
   text-align: center;
   width: auto;
@@ -23,22 +19,83 @@ header {
   height: 60px;
   background: #6a2e35;
 }
+.navegacion {
+  font-family: "Verdana", sans-serif;
+  font-size: x-large;
+  color: #cccccc;
+}
+
 nav {
   width: auto;
   text-align: center;
   padding: 10px;
   height: 25px;
 }
+/* Termino Cabecera*/
 
+/* Cuerpo*/
 main {
   padding-top: 10px;
   text-align: center;
   width: 100%;
 }
-span {
-  width: auto;
+/*Cuerpo*/
+
+/* Design menu Juego*/
+.caja {
+  width: 100%;
+  height: 80%;
 }
 
+/* Design menu Juego*/
+/* Design juego ahorcado*/
+div #lienzo {
+  width: 80%;
+  height: 80%;
+}
+div#frase {
+  border: 2px solid #cccccc;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 25px;
+}
+.erroneas {
+  padding-top: 1em;
+}
+
+.letrasErroneas {
+  margin-top: 1em;
+  font-size: larger;
+}
+
+.vida {
+  margin-top: 1em;
+  color: greenyellow;
+  font-size: small;
+}
+.perdiste {
+  margin-top: 1em;
+  color: red;
+  font-size: medium;
+}
+/* Design juego ahorcado*/
+#nuevapalabrajuego {
+  width: 100%;
+  resize: none;
+  outline: none;
+  color: #000000;
+  background-color: #ffffff00;
+  border: 0;
+  font-size: 32px;
+  font-family: "Verdana", sans-serif;
+}
+::placeholder {
+  color: #000000;
+  font-family: "Verdana", sans-serif;
+}
+/*Design agregar palabra*/
+
+/*Homologación CAJAS*/
 button {
   width: 45%;
   height: 65px;
@@ -51,83 +108,32 @@ button {
   border-radius: 24px;
   transition: 500ms;
 }
-footer {
-  text-align: center;
-  width: 100%;
-  background: #6a2e35;
-  position: absolute;
-  bottom: 0;
-}
-div#frase {
-  border: 2px solid #cccccc;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 25px;
-}
-
-div #lienzo {
-  width: 80%;
-  height: 80%;
-}
-
-.caja {
-  width: 100%;
-  height: 80%;
-}
 .caja-2,
 .caja-3 {
   width: 100%;
   height: 80%;
   display: none;
 }
-
-.navegacion {
-  font-family: "Verdana", sans-serif;
-  font-size: x-large;
-  color: #cccccc;
-}
-
-.titulo {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 5%;
-}
-
-.division-izquierda {
+.centralizacion {
   display: inline-block;
   vertical-align: top;
   margin: 0;
   height: 15%;
   width: 50%;
 }
-
-#advertencia {
-  color: #000000;
-  font-size: 25px;
+h1 {
+  font-size: x-large;
 }
-
-#nuevapalabrajuego {
-  width: 100%;
-  resize: none;
-  outline: none;
-  color: #000000;
-  background-color: #ffffff00;
-  border: 0;
-  font-size: 32px;
-  font-family: "Verdana", sans-serif;
-}
-
-::placeholder {
-  color: #000000;
-  font-family: "Verdana", sans-serif;
-}
-
-.alerta {
-  width: auto;
-  height: 4em;
-  margin: 1em 0 0 0;
-  font-size: 12px;
+.titulo {
+  font-size: 18px;
   font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.centro {
+  margin-top: 2em;
+  width: 100%;
+  height: 100%;
 }
 
 #principal:hover {
@@ -141,123 +147,10 @@ div #lienzo {
   background: #cccccc;
   border-radius: 24px;
 }
+/*Homologación Cajas*/
 
-.copiarTextoBtn:hover {
-  color: #6a2e35;
-  background: #cccccc;
-  border-radius: 24px;
-}
+/*Homologación Cajas 2 y 3*/
 
-.division-derecha {
-  margin-top: 15px;
-  display: inline-block;
-  vertical-align: top;
-  height: 550px;
-}
-
-.centro {
-  margin-top: 2em;
-  width: 100%;
-  height: 100%;
-}
-
-.cuadro {
-  width: 60%;
-  max-width: 352px;
-  min-width: 343px;
-  min-height: 440px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.37);
-  border-radius: 32px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.mensaje {
-  display: block;
-}
-
-.cuadroOculto {
-  display: none;
-}
-
-.mensajeNoEncontrado p {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 1em;
-}
-
-.mensajeIngreseTexto p {
-  font-size: 16px;
-  margin-top: 1em;
-}
-
-.textoEncriptado {
-  resize: none;
-  outline: none;
-  color: #000000;
-  background-color: #ffffff00;
-  border: 0;
-  font-size: 24px;
-  font-family: "Verdana", sans-serif;
-  margin-top: 25px;
-}
-
-#copiarTexto {
-  margin-top: 2.5em;
-}
-
-#copiarTexto:hover {
-  color: #6a2e35;
-  background: #cccccc;
-  border-radius: 24px;
-}
-
-.footer-div {
-  width: 100%;
-}
-.copyright {
-  display: inline-block;
-  height: 75px;
-  width: 100%;
-}
-
-.copyright p {
-  font-size: 12px;
-  margin: 1em auto;
-  font-weight: bold;
-  color: #cccccc;
-}
-
-#letra {
-  margin-top: 1.5em;
-}
-
-#boton {
-  margin-top: 1.5em;
-}
-
-.vida {
-  margin-top: 1em;
-  color: greenyellow;
-  font-size: small;
-}
-.perdiste {
-  margin-top: 1em;
-  color: red;
-  font-size: medium;
-}
-
-.erroneas {
-  padding-top: 1em;
-}
-
-.letrasErroneas {
-  margin-top: 1em;
-  font-size: larger;
-}
 .contenedor {
   width: 70%;
   height: 70%;
@@ -276,18 +169,42 @@ div #lienzo {
   display: inline-block;
 }
 
+#boton {
+  margin-top: 1.5em;
+}
+/*Homologación Cajas 2 y 3*/
+
+/*Footer*/
+footer {
+  text-align: center;
+  width: 100%;
+  background: #6a2e35;
+  position: absolute;
+  bottom: 0;
+}
+.footer-div {
+  width: 100%;
+}
+.copyright {
+  display: inline-block;
+  height: 75px;
+  width: 100%;
+}
+
+.copyright p {
+  font-size: 12px;
+  margin: 1em auto;
+  font-weight: bold;
+  color: #cccccc;
+}
+a {
+  color: #cccccc;
+}
+/*Footer*/
+
 @media only screen and (min-width: 768px) and (max-width: 899px) {
-  .division-izquierda {
+  .centralizacion {
     width: 100%;
-  }
-
-  #texto {
-    width: 80%;
-  }
-
-  .alerta {
-    text-align: left;
-    margin-left: 10%;
   }
 
   #principal {
@@ -299,38 +216,13 @@ div #lienzo {
     margin-left: 0.5em;
     width: 332px;
   }
-
-  .division-derecha {
-    width: 100%;
-    height: 550px;
-    max-width: none;
-    max-height: none;
-    padding-bottom: 7em;
-  }
-
-  .cuadro {
-    width: 688px;
-    height: 133px;
-    max-width: none;
-    max-height: none;
-    margin-top: 2em;
-  }
 }
 @media only screen and (min-width: 360px) and (max-width: 667px) {
-  .division-izquierda {
+  .centralizacion {
     width: 100%;
     height: 180px;
     max-width: none;
     max-height: none;
-  }
-
-  #texto {
-    width: 80%;
-  }
-
-  .alerta {
-    text-align: left;
-    margin-left: 10%;
   }
 
   .boton {
@@ -346,20 +238,5 @@ div #lienzo {
   #secundario {
     width: 150px;
     margin: 1em auto;
-  }
-
-  .division-derecha {
-    width: 100%;
-    height: 500px;
-    max-width: none;
-    max-height: none;
-    padding-bottom: 7em;
-  }
-  .cuadro {
-    width: 327px;
-    height: 186px;
-    max-width: none;
-    max-height: none;
-    margin-top: 2em;
   }
 }

@@ -66,7 +66,7 @@ function comprobar() {
 
   if (contadorVida < 1) {
     //si el contador de vida es menor a uno pierde
-    document.getElementById("vida").innerHTML = "Perdiste";
+    document.getElementById("vida").innerHTML = "perdiste";
     document.getElementById("vida").classList = "perdiste";
     document.getElementById("vida").style.fontSize = "20px";
   }

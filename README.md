@@ -31,7 +31,7 @@ Aplicación que permite al usuario jugar un mini juego del ahorcado, además de 
 4. Listo!
 
 ## Links:
-* Aplicacion [Encriptador](https://paarxul.github.io/Juego-Ahorcado-Sprint-02/)
+* Aplicacion [Juego Ahorcado](https://paarxul.github.io/Juego-Ahorcado-Sprint-02/)
 * [Detalle Sprint Trello](https://trello.com/b/1OBI0dEV/ahorcado-challenge)
 * [Modelo Figma](https://www.figma.com/file/kCsAB7eHc6xpoYByBQxNrb/Alura-Challenge---Desaf%C3%ADo-2---L%C3%B3gica?node-id=10%3A158)
 

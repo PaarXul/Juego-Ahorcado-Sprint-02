@@ -57,24 +57,33 @@ function comprobar() {
     letras_erradas = letras_erradas + letra + " ";
 
     document.getElementById("letrasErroneas").innerHTML = letras_erradas;
-    document.getElementById("vida").innerHTML ="Vidas Actuales: " + contadorVida;
+    document.getElementById("vida").innerHTML =
+      "Vidas Actuales: " + contadorVida;
   }
 
   palabraAdi = nuevo;
   //Inserta la palabra adivinada en el div de frase adivinada.
   document.getElementById("frase").innerHTML = palabraAdi;
 
+  function notificacion(resul, msg, icono) {
+    swal(resul, msg, icono);
+  }
+
   if (contadorVida < 1) {
     //si el contador de vida es menor a uno pierde
-    document.getElementById("vida").innerHTML = "perdiste";
+    document.getElementById("vida").innerHTML = "Perdiste";
     document.getElementById("vida").classList = "perdiste";
     document.getElementById("vida").style.fontSize = "20px";
+    //TODO Realizar un notificación perdiste
+    notificacion("Perdiste", "¿Quieres seguir intentado?", "error");
   }
 
   if (palabraAdi.search("_") == -1) {
     //busca en la palabra adivinada el guion bajo si este es menor a menos 1 se refleja el resultado ganador.
     document.getElementById("vida").innerHTML = "Ganaste";
     document.getElementById("vida").style.fontSize = "20px";
+    //TODO Realizar una notificación Ganaste
+    notificacion("Ganaste", "Felicidades", "success");
   }
   dibujar();
   letra = "";
@@ -197,7 +206,9 @@ function resultado() {
 }
 
 function nuevaPalabra() {
-  agregarpalabra = document.querySelector(".nuevapalabrajuego").value.toUpperCase();
+  agregarpalabra = document
+    .querySelector(".nuevapalabrajuego")
+    .value.toUpperCase();
 
   palabras.push(agregarpalabra);
 

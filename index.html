@@ -9,6 +9,8 @@
   <title>Challenge Juego-Ahorcado Alura</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -88,7 +90,7 @@
         </div>
         <div class="centro">
           <div class="contenedor">
-            <!--TODO se debe realizar validación de datos de entrada-->
+            <!--Validación de entrada solo letras-->
             <input type="text" id="nuevapalabrajuego" class="nuevapalabrajuego" placeholder="Nueva Palabra"
               onkeypress="return soloLetras(event)">
           </div>

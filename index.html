@@ -88,7 +88,9 @@
         </div>
         <div class="centro">
           <div class="contenedor">
-            <input type="text" id="nuevapalabrajuego" class="nuevapalabrajuego" placeholder="Nueva Palabra">
+            <!--TODO se debe realizar validación de datos de entrada-->
+            <input type="text" id="nuevapalabrajuego" class="nuevapalabrajuego" placeholder="Nueva Palabra"
+              onkeypress="return soloLetras(event)">
           </div>
           <br>
           <br>
@@ -103,6 +105,7 @@
           <br>
           <div class="contenedorbajo">
             <div class="labelin"><label for="">Palabras del Juego</label></div>
+            <br>
             <div class="labelin" id="palabrasingresadas"></div>
           </div>
         </div>

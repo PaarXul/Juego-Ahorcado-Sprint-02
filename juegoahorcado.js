@@ -57,8 +57,7 @@ function comprobar() {
     letras_erradas = letras_erradas + letra + " ";
 
     document.getElementById("letrasErroneas").innerHTML = letras_erradas;
-    document.getElementById("vida").innerHTML =
-      "Vidas Actuales: " + contadorVida;
+    document.getElementById("vida").innerHTML ="Vidas Actuales: " + contadorVida;
   }
 
   palabraAdi = nuevo;
@@ -157,7 +156,6 @@ function checkName(evento) {
   var charCode = evento;
   if (charCode != 0) {
     if (charCode < 65 || charCode > 90 == 192) {
-      //HACK DEFINITIVO PARA ADMITIR SOLO LETRAS
     } else {
       LetraRepetida(letra);
     }
@@ -199,9 +197,7 @@ function resultado() {
 }
 
 function nuevaPalabra() {
-  agregarpalabra = document
-    .querySelector(".nuevapalabrajuego")
-    .value.toUpperCase();
+  agregarpalabra = document.querySelector(".nuevapalabrajuego").value.toUpperCase();
 
   palabras.push(agregarpalabra);
 

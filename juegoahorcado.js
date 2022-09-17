@@ -65,6 +65,7 @@ function comprobar() {
   //Inserta la palabra adivinada en el div de frase adivinada.
   document.getElementById("frase").innerHTML = palabraAdi;
 
+  //función para las notificaciones las cual recibe tres parámetros, El resultado del juego, mensaje y el icono que mostrara, por medio del package de SweetAlert.js.org
   function notificacion(resul, msg, icono) {
     swal(resul, msg, icono);
   }
@@ -74,7 +75,6 @@ function comprobar() {
     document.getElementById("vida").innerHTML = "Perdiste";
     document.getElementById("vida").classList = "perdiste";
     document.getElementById("vida").style.fontSize = "20px";
-    //TODO Realizar un notificación perdiste
     notificacion("Perdiste", "¿Quieres seguir intentado?", "error");
   }
 
@@ -82,7 +82,6 @@ function comprobar() {
     //busca en la palabra adivinada el guion bajo si este es menor a menos 1 se refleja el resultado ganador.
     document.getElementById("vida").innerHTML = "Ganaste";
     document.getElementById("vida").style.fontSize = "20px";
-    //TODO Realizar una notificación Ganaste
     notificacion("Ganaste", "Felicidades", "success");
   }
   dibujar();

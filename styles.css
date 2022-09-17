@@ -109,6 +109,9 @@ button {
   border-radius: 24px;
   transition: 500ms;
 }
+
+/* display:none; establece como para metros para que no muestre el juego del ahorcado y agregar palabra. a cual se ira mostrando al elegir alguna opción*/
+
 .caja-2,
 .caja-3 {
   width: 100%;

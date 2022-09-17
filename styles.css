@@ -78,6 +78,8 @@ div#frase {
   font-size: medium;
 }
 /* Design juego ahorcado*/
+/*Design agregar palabra*/
+
 #nuevapalabrajuego {
   width: 100%;
   resize: none;
@@ -201,7 +203,7 @@ a {
 }
 /*Footer*/
 
-/*notificacion*/
+/*notificación*/
 
 .swal-button {
   background-color: #6a2e35;
@@ -217,7 +219,7 @@ a {
   width: 100%;
 }
 
-/*Notificacion*/
+/*Notificación*/
 
 @media only screen and (min-width: 768px) and (max-width: 899px) {
   .centralizacion {
